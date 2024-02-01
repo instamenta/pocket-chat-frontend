@@ -1,4 +1,4 @@
-import { JWT } from '@/lib/variables';
+import {JWT} from "./variables.ts";
 
 export function extractAuthToken() {
   const data = document.cookie

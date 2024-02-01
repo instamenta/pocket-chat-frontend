@@ -1,12 +1,11 @@
-'use client';
-
 import React from 'react';
 import {listFriendsByUserId} from "../../lib/queries/friend.ts";
 import useUser from "../../lib/store";
 import {I_UserSchema} from "../../lib/types";
 import {Link} from "react-router-dom";
+import Navbar from "../../components/Navbar.tsx";
 
-export default function Chat() {
+export default function Chats() {
     const [flash, setFlash] = React.useState(false);
     const [userList, setUserList] = React.useState<I_UserSchema[]>([]);
 
@@ -28,7 +27,7 @@ export default function Chat() {
         <>
             {/* Add Friends Action Button*/}
             <Link
-                href="/friends/"
+                to={'/friends/'}
                 className="fixed bottom-4 right-4 flex h-12 w-12 items-center justify-center rounded-full bg-green-500"
             >
                 {/*<?xml version="1.0" encoding="utf-8"?>*/}

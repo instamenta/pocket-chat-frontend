@@ -16,6 +16,13 @@
   }
 }
 
+.root
+{}
+
+.html {
+    width: 100vh;
+}
+
 body {
   background-color: white;
 }
